@@ -1,0 +1,38 @@
+﻿@model SMSProject.Models.ApplicationUser
+
+<h1>Edit</h1>
+<form method="post" asp-action="Edit">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" type="text" class="form-control" placeholder="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="BOD" class="control-label"></label>
+        <input asp-for="BOD" type="date" class="form-control" placeholder="Date of Birth" />
+        <span asp-validation-for="BOD" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" type="email" class="form-control" placeholder="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Number" class="control-label"></label>
+        <input asp-for="Number" type="text" class="form-control" placeholder="Phone Number" />
+        <span asp-validation-for="Number" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Course" class="control-label"></label>
+        <input asp-for="Course" type="text" class="form-control" placeholder="Course" />
+        <span asp-validation-for="Course" class="text-danger"></span>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <a class="btn mt-3 btn-outline-danger" asp-action="Index">Back</a>
+        </div>
+        <div class="col-6">
+            <button class="btn mt-3 btn-outline-primary float-end" type="submit">Create</button>
+        </div>
+    </div>
+</form>
